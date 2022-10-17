@@ -14,7 +14,7 @@
 ### `About MS Access     -   C++ back-end`
 *   https://en.wikipedia.org/wiki/Microsoft_Access
 
-### `most important:`
+#### `Most important:`
 -   File extensions
 -   Microsoft Access saves information under the following file formats:
 -   Current formats
@@ -40,7 +40,7 @@
 
 *   MDB files contain database queries, tables, and more that can be used to link to and store data from other files, like XML and HTML, and applications, like Excel and SharePoint. An LDB file is sometimes seen in the same folder as an Access database file; it's an Access lock file that's temporarily stored with a shared database.
 
-### `about scripted buttons in Microsoft Excel Desktop App`
+### `About scripted buttons in Microsoft Excel Desktop App`
 *   https://learn.microsoft.com/en-us/office/dev/scripts/develop/script-buttons?source=recommendations  
 
 ##      `What am I going to script and why:`
