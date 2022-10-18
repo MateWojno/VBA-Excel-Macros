@@ -27,6 +27,7 @@
 <li><a href="https://en.wikipedia.org/wiki/Microsoft_Access">About MS Access</a></li>
 <li><a href="https://www.lifewire.com/mdb-file-2621974">What Is an MDB File?</a></li>
 <li><a href="https://learn.microsoft.com/en-us/office/dev/scripts/develop/script-buttons?source=recommendations">About scripted buttons in Microsoft Excel Desktop App</a></li>
+<li><a href="https://www.exceldome.com/solutions/rename-an-active-excel-worksheet/#:~:text=VBA%20Methods%3A%20Using%20VBA%20you%20can%20rename%20an,worksheet%20and%20you%20can%20then%20rename%20the%20worksheet">How to rename worksheet</a></li>
 </ul>
 </div>
 
