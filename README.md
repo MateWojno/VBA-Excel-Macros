@@ -1,85 +1,49 @@
-#       `VBA/TS     -   scripting macros in Excel`
--       author @MateWojno, mateusz.k.wojno@gmail.com
--       Start   17-10-2022
--       End     [?]
+<div id=about>
+<h1 align=center>Simple Coding in Excel</h1>
+<p>author @MateWojno, mateusz.k.wojno@gmail.com <br>Start   17-10-2022<br>End     [?]</p>
+</div>
+<div id=toc> 
+<h1 align=center>Table of content [PL]</h1>
+  <ul>
+        <li><h2>easy to read and understand user manual (how to install, run and operate - with pictures/screenshots)</h2></li>
+        <li><h2>skrocic README</h2></li>
+        <li><h2>zrobic odwolania, navbary, progress bary</h2></li>
+        <li><h2>PR - zapraszam</h2></li>
+        <li><h2>na koniec przetlumaczyc na [ENG]</h2></li>
+  </ul>
+</div>
 
-##      `Table of content`
--       ToDo:
--           style this file better and make some links/button from Table of content to headers;
--           make some navbar or something;
--           translate from pl to eng properly;
--           make easy progress bar or something to track progress;
--           testing and progress bar;
--           issues/bugs tracker;
--           easy to read and understand user manual (how to install, run and operate) with pictures/screenshots;
+<div id="res"> 
+<h1 align=center>Resources:</h1>
+<ul>
+<li><a href="https://www.wallstreetmojo.com/vba-rename-sheet/">VBA coding</a></li>
+<li><a href="https://www.wallstreetmojo.com/macros-in-excel/">Macros in Excel</a></li>
+<li><a href="https://file.org/extension/bas#:~:text=BASIC%20is%20a%20programming%20language%20that%20was%20created,language%2C%20it%20is%20saved%20with%20the.bas%20file%20extension.
+">.bas file extension</a></li>
+<li><a href="https://www.wallstreetprep.com/self-study-programs/the-ultimate-excel-vba-course/">Paid VBA course</a></li>
+<li><a href="https://learn.microsoft.com/en-us/office/dev/scripts/resources/power-query-differences">About Power Query</a></li>
+<li><a href="https://learn.microsoft.com/en-us/office/dev/scripts/resources/vba-differences">Differences between VBA Macros and Office Scripts (online)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/office/dev/scripts/">Office Scripts documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microsoft_Access">About MS Access</a></li>
+<li><a href="https://www.lifewire.com/mdb-file-2621974">What Is an MDB File?</a></li>
+<li><a href="https://learn.microsoft.com/en-us/office/dev/scripts/develop/script-buttons?source=recommendations">About scripted buttons in Microsoft Excel Desktop App</a></li>
+</ul>
+</div>
 
-##      `Resources:`
-
-###     `About Power Query`
-*   https://learn.microsoft.com/en-us/office/dev/scripts/resources/power-query-differences
-
-###     `Differences between VBA Macros and Office Scripts`
-*   https://learn.microsoft.com/en-us/office/dev/scripts/resources/vba-differences
-
-###     `Office Scripts documentation`
-*   https://learn.microsoft.com/en-us/office/dev/scripts/
-
-###     `About MS Access     -   C++ back-end`
-*   https://en.wikipedia.org/wiki/Microsoft_Access
-
-#### `Most important:`
--   File extensions
--   Microsoft Access saves information under the following file formats:
--   Current formats
--   File format	Extension
--   Access Blank Project Template	.adn
--   Access Database (2007 and later)	.accdb
--   Access Database Runtime (2007 and later)	.accdr
--   Access Database Template (2007 and later)	.accdt
--   Access Add-In (2007 and later)	.accda
--   Access Workgroup, database for user-level security.	.mdw
--   Protected Access Database, with compiled VBA and macros (2007 and- later)	.accde
--   Windows Shortcut: Access Macro	.mam
--   Windows Shortcut: Access Query	.maq
--   Windows Shortcut: Access Report	.mar
--   Windows Shortcut: Access Table	.mat
--   Windows Shortcut: Access Form	.maf
--   Access lock files (associated with .accdb)	.laccdb
-
-###     `What Is an MDB File?`
--   https://www.lifewire.com/mdb-file-2621974
-
-*   A file with the MDB file extension is a Microsoft Access database file that literally stands for Microsoft Database. This is the default database file format used in Access 2003 and earlier, while newer versions use the ACCDB format.
-
-*   MDB files contain database queries, tables, and more that can be used to link to and store data from other files, like XML and HTML, and applications, like Excel and SharePoint. An LDB file is sometimes seen in the same folder as an Access database file; it's an Access lock file that's temporarily stored with a shared database.
-
-###     `About scripted buttons in Microsoft Excel Desktop App`
-*   https://learn.microsoft.com/en-us/office/dev/scripts/develop/script-buttons?source=recommendations  
-
-##      `What am I going to script and why:`
-
-*           VBA     -   scripts (inside buttons)     for:
--           1/   reading database file;
--           2/   data transformation in power query;
--           3/   refresh loop;
--           4/   automatization of this loop;
-
-###   `Why?    -   to make our Company employees more productive;`
-
-##      `#1/   reading database file     -   algorithm`
-
-###     `tools/extensions required:`
+###     `Tools/extensions required:`
 -       Microsoft Excel 2019 (pro recommended);
 -       Power Query (built in);
--       Visual Studio Code (recommended for Devs)
+-       Visual Studio Code (recommended for Devs) + extensions: XVBA - Live Server VBA, VBA v0.6.0 serkonda7, vba-snippets Scott Spence;
 -       Dedicated App built by me (optional)
-####   *for old .mdb files you need MS Access 2010*
+-       for old .mdb files you need MS Access 2010
 
-###     `input data:`
-*       MS Access database file:
--       .mdb/.accdb;
+##      `#1/    Reading database file     -   algorithm`
 
-###     `description:`
+###     `Input data:`
+*               MS Access database file:
+-               .mdb/.accdb;
+-               
+###     `Description:`
 -       [PL]
             1/  start
             2/  pobierz dane w programie excel z okreslonej sciezki;
@@ -89,37 +53,18 @@
             6/  zapisz log o alternatywnej tresci 1 - "%date% %username% udalo sie" OR 0 - "%date% %username% wystapil blad"
             4/  stop
 
-###     `output data:`
+###     `Output data:`
 -       [PL]
             1/  tabela w Excelu, ktora wymaga filtrowania wynikow;
             2/  zawarta w nowym, nazwanym, aktywnym arkuszu;
 
-###     `API (interface):`
--       [PL]
-            1/  przycisk w arkuszu [main] <Data-Fetch>;
-            2/  kiedys - wlasny, zewnetrzny albo wbudowany addon do Excela, dedykowany do tego rozwiazania;
+##      `#2/    Data transformation in power query     -   algorithm`
 
-###     `Debug/Bug tracker      -       for app or addon:`
--       [PL]
-            1/  zbiera logi i ewentualne bledy;
-            2/  pozwala zglaszac bledy uzytkownikowi wraz z ich opisem;
-            3/  przesyla wiadomosci o bledach na adres tworcy za pomoca programu pocztowego;            
-
-
-##      `#2/   data transformation in power query     -   algorithm`
-
-###     `tools/extensions required:`
--       Microsoft Excel 2019 (pro recommended);
--       Power Query (built in);
--       Visual Studio Code (recommended for Devs)
--       Dedicated App built by me (optional)
-####   *for old .mdb files you need MS Access 2010*
-
-###     `input data:`
+###     `Input data:`
 -       output from algorithm #1, .xlsm (Excel with Macros);
 -       active excel sheet;
 
-###     `description:`
+###     `Description:`
 -       [PL]
         1/  start;
         2/  wczytaj dane z algorytmu #1 i zaznacz aktywny arkusz;
@@ -130,30 +75,10 @@
         7/  zapisz log o alternatywnej tresci 1 - "%date% %username% udalo sie" OR 0 - "%date% %username% wystapil blad";
         8/  stop;
 
-###     `output data:`
+###     `Output data:`
 -       table in sheet, format .xlsx or .xlsm (prefered)
 
-###     `API (interface):`
--       [PL]
-            1/  przycisk w arkuszu [main] <Data-Transform>;
-            2/  kiedys - wlasny, zewnetrzny albo wbudowany addon do Excela, dedykowany do tego rozwiazania;
-
-###     `Debug/Bug tracker      -       for app or addon:`
--       [PL]
-            1/  zbiera logi i ewentualne bledy;
-            2/  pozwala zglaszac bledy uzytkownikowi wraz z ich opisem;
-            3/  przesyla wiadomosci o bledach na adres tworcy za pomoca programu pocztowego;            
-
-
-
-##      `#3/   refresh loop     -   algorithm`
-
-###     `tools/extensions required:`
--       Microsoft Excel 2019 (pro recommended);
--       Power Query (built in);
--       Visual Studio Code (recommended for Devs)
--       Dedicated App built by me (optional)
-####   *for old .mdb files you need MS Access 2010*
+##      `#3/    Refresh loop     -   algorithm`
 
 ###     `input data:`
 -       [PL]
@@ -201,20 +126,8 @@
 -       [PL]
             1/ ten algorytm polega na czyszczeniu pliku i pamieci, nie generuje outputu;
 
-###     `API (interface):`
--       [PL]
-            1/  przycisk w arkuszu [main] <Data-Clean>;
-            2/  kiedys - wlasny, zewnetrzny albo wbudowany addon do Excela, dedykowany do tego rozwiazania;
+##      `#4/    Automatization of this loop     -   algorithm`
 
-
-##      `#4/   automatization of this loop     -   algorithm`
-
-###     `tools/extensions required:`
--       Microsoft Excel 2019 (pro recommended);
--       Power Query (built in);
--       Visual Studio Code (recommended for Devs)
--       Dedicated App built by me (optional)
-####   *for old .mdb files you need MS Access 2010*
 ###     `input data:`
 
 ###     `description:`
@@ -222,6 +135,20 @@
 ###     `output data:`
 
 ###     `API (interface):`
+
+##      `#5/    Debug/Bug tracker      -       for app or addon:`
+-       [PL]
+            1/          zbiera logi i ewentualne bledy;
+            2/          pozwala zglaszac bledy uzytkownikowi wraz z ich opisem;
+            3/          przesyla wiadomosci o bledach na adres tworcy za pomoca programu pocztowego; 
+
+#       `API (interface):`
+-       [PL]
+            #1/         przycisk w arkuszu [main] <Data-Fetch>;
+            #2/         przycisk w arkuszu [main] <Data-Transform>;
+            #3/         przycisk w arkuszu [main] <Data-Clean>;
+            #4/         przycisk w arkuszu [main] <Auto>;
+            #5/         przycisk w arkuszu [main] <Debug>;
 
 
 
