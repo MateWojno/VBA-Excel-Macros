@@ -1,5 +1,5 @@
 <div id="about">
-        <h1 align="center">Simple Coding in VBA-Excel</h1>
+        <h1 align="center">VBA Excel Macros for my Company</h1>
         <p align="center">author @MateWojno, mateusz.k.wojno@gmail.com <br>Start   17-10-2022<br>End 19-10-2022</p>
 </div>
 <div id="toc"> 
