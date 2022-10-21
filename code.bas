@@ -1,9 +1,5 @@
 Sub transform_algorithm_1_and_2()
-'
-' transform Macro
-'
 
-'
     ActiveWorkbook.Queries.Add Name:="RaportProdukcji", Formula:= _
         "let" & Chr(13) & "" & Chr(10) & "    Source = Access.Database(File.Contents(""C:\Users\PC\Desktop\w-db_files\wdb.mdb""), [CreateNavigationProperties=true])," & Chr(13) & "" & Chr(10) & "    _RaportProdukcji = Source{[Schema="""",Item=""RaportProdukcji""]}[Data]," & Chr(13) & "" & Chr(10) & "    #""Removed Other Columns"" = Table.SelectColumns(_RaportProdukcji,{""nr_raportu"", ""data"", ""kod_receptury"", ""nazwa_receptury"", ""zamowiono"", ""wyrodu" & _
         "kowano"", ""zamowiono_colosc"", ""wyslano"", ""samochod"", ""samochod_kierowca"", ""pompa"", ""pompa_kierowca"", ""klient"", ""klient2"", ""budowa"", ""budowa2""})" & Chr(13) & "" & Chr(10) & "in" & Chr(13) & "" & Chr(10) & "    #""Removed Other Columns"""
