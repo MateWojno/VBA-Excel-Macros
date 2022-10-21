@@ -10,7 +10,6 @@
                 <li><a href="#extensions">Extensions</a></li>
                 <li><a href="#algorithms">Algorithms</a></li>
                 <li><a href="#api">API</a></li>
-                <li><a href="#demo">Demo</a></li>
         </ul>
 </div>
 <div id="res"> 
@@ -99,10 +98,17 @@
                 <a href="#toc">Return to the top</a>
         </div>
         </div>
-        <div id="api">
-        ![1](https://user-images.githubusercontent.com/110040191/197168722-4ef0c86d-bd2d-4d7d-b130-aab0cf673538.png)
-        <p> First button does the job, second button refreshes and deletes the query and "wdb" sheet, last button displays info.  Unfortunately, I can't share more information about this project due to the company's NDA.
+        <div id="api" align="center">
+        <h1 align="center">#3/ API inside Excel</h1>
+       <img src="https://user-images.githubusercontent.com/110040191/197168722-4ef0c86d-bd2d-4d7d-b130-aab0cf673538.png" alt="API">
+        <h2>First button does the job of <a href="#reading-database">algorithm #1</a> and <a href="#transform-database">algorithm #2</a><br>
+        Second button refreshes and deletes the query and "wdb" sheet - <a href="#transform-database">algorithm #3</a><br>
+        Last button displays <a href="#res">info.</a><hr>
+        <h5>Unfortunately, I can't share more information about this project due to the company's NDA.</h5>
+        <a href="#toc">Return to the top</a>
         </div>
-   
+
+
+
 
 
