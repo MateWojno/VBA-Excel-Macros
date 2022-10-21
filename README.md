@@ -10,7 +10,6 @@
                 <li><a href="#extensions">Extensions</a></li>
                 <li><a href="#algorithms">Algorithms</a></li>
                 <li><a href="#api">API</a></li>
-                <li><a href="#code">Code</a></li>
                 <li><a href="#demo">Demo</a></li>
         </ul>
 </div>
@@ -99,38 +98,11 @@
                         <p>None</p>
                 <a href="#toc">Return to the top</a>
         </div>
-        <div id="debug">
-                <h1 align="center">#4/ Debug/Bug tracker</h1>
-                <pre> [PL-todo]
-                1/          zbiera logi i ewentualne bledy;
-                2/          pozwala zglaszac bledy uzytkownikowi wraz z ich opisem;
-                3/          przesyla wiadomosci o bledach na adres tworcy za pomoca programu pocztowego;
-                </pre>
-                <a href="#toc">Return to the top</a>
         </div>
-</div>
-<div id="api">
-<pre> [PL-todo]
-            #       `API (interface):`
-            -       [PL]
-                        #1/         przycisk w arkuszu [Program] <Data-Fetch>;
-                        #2/         przycisk w arkuszu [Program] <Data-Transform>;
-                        #3/         przycisk w arkuszu [Program] <Data-Clean>;
-                        #4/         przycisk w arkuszu [Program] <Auto>;
-                        #5/         przycisk w arkuszu [Program] <Debug>;
-            
-            -       [ENG]
-                        #1 and #2/          'ON'            button inside [Program] sheet;
-                        #3                  'Refresh'       button inside [Program] sheet
-                
-</pre>
-<a href="#toc">Return to the top</a>
-</div>
-        <div id="code">
-                <pre> [PL-todo]</pre>
-                <a href="#toc">Return to the top</a>
+        <div id="api">
+        ![1](https://user-images.githubusercontent.com/110040191/197168722-4ef0c86d-bd2d-4d7d-b130-aab0cf673538.png)
+        <p> First button does the job, second button refreshes and deletes the query and "wdb" sheet, last button displays info.  Unfortunately, I can't share more information about this project due to the company's NDA.
         </div>
-                <div id="demo">
-                        <pre> [PL-todo]</pre>
-                        <a href="#toc">Return to the top</a>
-                </div>
+   
+
+
